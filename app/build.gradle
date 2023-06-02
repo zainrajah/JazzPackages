@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+
+}
+
+android {
+    namespace 'com.allnetworkpackages.mobilink.jazzsimpackages.bcb'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.allnetworkpackages.mobilink.jazzsimpackages.bcb"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue "string", "admob_app_id", '"ca-app-pub-8987905266784692~6832436735'
+            resValue "string", "admob_banner", '"ca-app-pub-8987905266784692/5530963353"'
+            resValue "string", "interstitial", '"ca-app-pub-8987905266784692/4405568039"'
+            resValue "string", "admob_native", '"ca-app-pub-8987905266784692/4828201871"'
+            resValue "string", "admob_app_open", '"ca-app-pub-8987905266784692/1591718340"'
+
+        }
+        debug {
+            minifyEnabled false
+            resValue "string", "admob_app_id", '"ca-app-pub-3940256099942544~3347511713'
+            resValue "string", "interstitial", '"ca-app-pub-3940256099942544/1033173712"'
+            resValue "string", "admob_banner", '"ca-app-pub-3940256099942544/6300978111"'
+            resValue "string", "admob_native", '"ca-app-pub-3940256099942544/2247696110"'
+            resValue "string", "admob_app_open", '"ca-app-pub-3940256099942544/1033173712"'
+
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //sp-dp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    //roundImage
+//
+//    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //lottie
+    implementation "com.airbnb.android:lottie:5.1.1"
+
+    //room Database
+    implementation "androidx.room:room-runtime:2.2.5"
+//    implementation 'com.google.android.datatransport:transport-runtime:3.1.9'
+//   implementation 'androidx.core:core-ktx:2.2.5'
+//
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
+//
+    kapt("androidx.room:room-compiler:2.2.5")
+
+
+    //
+    //corotine
+    def lifecycle_ver = "2.2.0-alpha01"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_ver"
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "androidx.lifecycle:lifecycle-runtime:2.4.1"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.4.1"
+
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    //ads
+//    implementation 'com.google.ads.mediation:facebook:6.12.0.0'
+    implementation "io.insert-koin:koin-core:3.0.1"
+    implementation "io.insert-koin:koin-core-ext:2.2.3"
+    testImplementation "io.insert-koin:koin-test:3.1.2"
+    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'com.google.android.gms:play-services-ads:22.0.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation platform('com.google.firebase:firebase-bom:30.0.0')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+
+
+
+//    implementation("androidx.room:room-ktx:2.2.5")
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

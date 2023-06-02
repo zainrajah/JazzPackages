@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401993285056",
+    "project_id": "packages-for-jazz",
+    "storage_bucket": "packages-for-jazz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401993285056:android:890598a6e37f395aed9c25",
+        "android_client_info": {
+          "package_name": "com.allnetworkpackages.mobilink.jazzsimpackages.bcb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Jy4vu7LIcv9I22c8dddiE0QV8oXIyXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

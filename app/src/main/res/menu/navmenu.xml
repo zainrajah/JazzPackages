@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view"
+
+    >
+
+ <item
+        android:id="@+id/navShareApp"
+        android:icon="@drawable/sharesymbol"
+        android:title="Share this App"
+        />
+    <item
+        android:id="@+id/navRateApp"
+        android:icon="@drawable/ratesymbol"
+        android:title="Rate the App"
+        />
+    <item
+        android:id="@+id/navFeedback"
+        android:icon="@drawable/feedbacksymbol"
+        android:title="Feedback"
+        />
+    <item
+        android:id="@+id/navPrivacyPoilicy"
+        android:icon="@drawable/privacypolicysymbol"
+        android:title="Privacy Policy "
+        />
+    <item
+        android:id="@+id/navMoreApps"
+        android:icon="@drawable/moreapps"
+        android:title="More Apps"
+        />
+    <item
+        android:id="@+id/navExit"
+        android:icon="@drawable/exitsymbol"
+        android:title="Exit"
+        />
+
+</menu>

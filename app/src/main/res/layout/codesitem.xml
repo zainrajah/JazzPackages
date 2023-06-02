@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_24sdp"
+
+        >
+
+        <TextView
+            android:id="@+id/CodeHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="*111#"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DescriptionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Check Balance"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center_horizontal|center_vertical|center"
+            />
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/ic_call"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:elevation="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_56sdp"/>
+
+        <Button
+            android:id="@+id/CallBtn"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/round_circle_button"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:layout_marginRight="@dimen/_56sdp"
+
+            >
+        </Button>
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@drawable/ic_copy"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:elevation="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_36sdp"/>
+        <Button
+            android:id="@+id/copyBtn"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/round_circle_button"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_36sdp"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@drawable/ic_share"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:elevation="@dimen/_8sdp"
+
+            android:layout_marginLeft="@dimen/_56sdp"/>
+
+        <Button
+            android:id="@+id/ShareBtn"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/round_circle_button"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/_36sdp"
+
+            android:layout_marginLeft="@dimen/_56sdp"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
